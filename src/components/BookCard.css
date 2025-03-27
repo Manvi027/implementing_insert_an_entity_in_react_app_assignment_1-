@@ -3,29 +3,30 @@
 .book-card {
   display: flex;
   flex-direction: column;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border: 1px solid #f0c7e8; /* Soft pink border */
+  border-radius: 12px; /* Rounder corners */
   margin: 16px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2); /* Soft pinkish shadow */
+  background-color: #ffe6f7; /* Soft pastel pink background */
   transition: transform 0.2s, box-shadow 0.2s;
-  width: 200px;
+  width: 220px; /* Slightly wider card */
 }
 
 .book-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px); /* Slightly larger hover effect */
+  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.3); /* More pronounced pink shadow on hover */
 }
 
 .book-cover {
   width: 100%;
   height: 300px;
   object-fit: cover;
+  border-bottom: 4px solid #f0c7e8; /* Pink border at the bottom of the cover */
 }
 
 .book-details {
-  padding: 16px;
+  padding: 18px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -33,18 +34,20 @@
 
 .book-title {
   margin: 0;
-  font-size: 1.2em;
-  color: #333;
+  font-size: 1.3em;
+  color: #ff66b2; /* Bold pink for title */
+  font-weight: 600; /* Slightly bolder for emphasis */
   flex-grow: 1;
 }
 
 .book-author {
   margin: 8px 0;
-  color: #555;
-  font-size: 1em;
+  color: #d18bc8; /* Lighter pinkish-purple for the author */
+  font-size: 1.1em;
 }
 
 .book-description {
-  color: #666;
-  font-size: 0.9em;
+  color: #d1a7c7; /* Soft lavender color for description */
+  font-size: 0.95em;
+  line-height: 1.4;
 }
